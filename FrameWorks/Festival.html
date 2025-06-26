@@ -10,6 +10,31 @@
         #inicio{
             background: linear-gradient(135deg, rgb(95, 92, 92) 0%, rgb(32, 19, 148) 100% );
         }
+        
+        .navbar-brand{
+            text-shadow: 0 0 20px rgba(0, 247, 255, 0.5);
+        }
+        header nav ul{
+            display: flex;
+        }
+        header nav ul li{
+            cursor: pointer;
+            position: relative;
+            padding: 5px 0;
+        }
+        header nav ul li::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: #00f7ff;
+            transition: width 0.5s ease;
+        }
+        header nav ul li:hover::after{
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -17,7 +42,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#"><i class="fa-solid fa-music"></i>Rock Festival</a>
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-music"></i> Rock Festival</a>
             <!--botão responsividade mobalie-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBar">
                 <span class="navbar-toggler-icon"></span>
@@ -29,16 +54,16 @@
                         <a class="nav-link" href="#inicio">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Programação</a>
+                        <a class="nav-link" href="#programacao">Programação</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ingressos</a>
+                        <a class="nav-link" href="#ingressos">Ingressos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Galeria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -56,7 +81,7 @@
                     <div class="row text-center mb-4">
                         <div class="col-md-4">
                             <h3><i class="fa-solid fa-calendar-days"></i></h3>
-                            <p>12-15 de Novembro</p>
+                            <p>27-29 de Junho</p>
                         </div>
                         <div class="col-md-4">
                             <h3><i class="fa-solid fa-location-dot"></i></h3>
@@ -76,10 +101,172 @@
         </div>
     </section>
 
+    <section id="programacao" class="mt-5" >
+        <div class="container">
+            <h2 class="text-center mt-4 mb-2">Programação</h2>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white text-center">
+                            <h4>Sexta-Feira-27/06</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>18:00h</strong>
+                                <span>Korn</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>20:00h</strong>
+                                <span>Rage Against the Machine</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>22:00h</strong>
+                                <span>Link Park</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>00:00h</strong>
+                                <span>For Today</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>2:00h</strong>
+                                <span>Demon Hunter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white text-center">
+                            <h4>Sábado-28/06</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>18:00h</strong>
+                                <span>P.O.D</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>20:00h</strong>
+                                <span>Devotos</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>22:00h</strong>
+                                <span>Os Cachorros</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>00:00h</strong>
+                                <span>Sepultura</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>2:00h</strong>
+                                <span>Nação Zumbi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-danger text-white text-center">
+                            <h4>Domingo-29/06</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>18:00h</strong>
+                                <span>Deftones</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>20:00h</strong>
+                                <span>Limp Bizkit</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>22:00h</strong>
+                                <span>Pear Jam</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>00:00h</strong>
+                                <span>Alice in chains</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                <strong>2:00h</strong>
+                                <span>Cpm-22</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="ingressos" style="background-color: rgb(133, 145, 141);" >
+        <div class="container">
+            <h2 class="text-center mb-3 mt-3">Ingressos</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card text-center ">
+                        <div class="card-body">
+                            <h4 class="card-title">Pista</h4>
+                            <h2 class="text-primary">R$120,00</h2>
+                            <p class="card-text">Acesse à área comum</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa-solid fa-check"></i> 3 Dias de evento</li>
+                                <li><i class="fa-solid fa-check"></i> Área de Alimentação</li>
+                                <li><i class="fa-solid fa-check"></i> Banheiros</li>
+                            </ul>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card text-center ">
+                        <div class="card-body">
+                            <h4 class="card-title">Front Stage</h4>
+                            <h2 class="text-primary">R$240,00</h2>
+                            <p class="card-text">Acesse à área principal em frente ao palco</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa-solid fa-check"></i> 3 Dias de evento</li>
+                                <li><i class="fa-solid fa-check"></i> Área de Alimentação</li>
+                                <li><i class="fa-solid fa-check"></i> Banheiros</li>
+                                <li><i class="fa-solid fa-check"></i> Open Bar</li>
+                            </ul>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card text-center ">
+                        <div class="card-body">
+                            <h4 class="card-title">VIP</h4>
+                            <h2 class="text-primary">R$500,00</h2>
+                            <p class="card-text">Acesse à área comum</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa-solid fa-check"></i> 3 Dias de evento</li>
+                                <li><i class="fa-solid fa-check"></i> Open Bar</li>
+                                <li><i class="fa-solid fa-check"></i> Mesa para 10 pessoas</li>
+                            </ul>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
 
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer id="contato" class="bg-dark text-white py-4 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
