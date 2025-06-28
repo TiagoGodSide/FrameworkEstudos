@@ -10,6 +10,7 @@
         .category-icon {
             font-size: 2rem;
             margin-bottom: 1rem;
+            
         }
         .price-tag {
             font-size: 1.2rem;
@@ -34,6 +35,7 @@
             padding: 2rem;
             margin-bottom: 2rem;
         }
+       
     </style>
 </head>
 <body class="bg-light">
@@ -78,6 +80,11 @@
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="bebidas-tab" data-bs-toggle="pill" data-bs-target="#bebidas" type="button" role="tab">
                             <i class="fas fa-wine-glass me-2"></i>Bebidas
+                        </button>
+                    </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="bebidas-tab" data-bs-toggle="pill" data-bs-target="#cafeEspecial" type="button" role="tab">
+                            <i class="fas fa-wine-glass me-2"></i>Cafés Especiais
                         </button>
                     </li>
                 </ul>
@@ -533,23 +540,23 @@
             </div>
         </div>
 
-        <!-- Cafés e Chás -->
+        <!-- Chás -->
         <div class="col-lg-4 col-md-6">
             <div class="card h-100 border-0 shadow-sm">
                 <div class="card-header bg-warning text-dark text-center">
-                    <h5 class="mb-0"><i class="fas fa-coffee me-2"></i>Cafés & Chás</h5>
+                    <h5 class="mb-0"><i class="fas fa-coffee me-2"></i>Chás</h5>
                 </div>
                 <div class="list-group list-group-flush">
                     <div class="list-group-item d-flex justify-content-between align-items-center">
                         <div>
-                            <strong>Café Expresso</strong>
+                            <strong>Chá com leite</strong>
                             <br><small class="text-muted">Tradicional</small>
                         </div>
                         <span class="badge bg-warning text-dark rounded-pill">R$ 6,90</span>
                     </div>
                     <div class="list-group-item d-flex justify-content-between align-items-center">
                         <div>
-                            <strong>Cappuccino</strong>
+                            <strong>Chá inglês</strong>
                             <br><small class="text-muted">Com espuma cremosa</small>
                         </div>
                         <span class="badge bg-warning text-dark rounded-pill">R$ 9,90</span>
@@ -563,7 +570,7 @@
                     </div>
                     <div class="list-group-item d-flex justify-content-between align-items-center">
                         <div>
-                            <strong>Café com Leite</strong>
+                            <strong>Chá quente</strong>
                             <br><small class="text-muted">Cremoso</small>
                         </div>
                         <span class="badge bg-warning text-dark rounded-pill">R$ 7,90</span>
@@ -612,8 +619,162 @@
         </div>
     </div>
 </div>
+
+    <!-- Café -->
+            <div class="tab-pane fade" id="cafeEspecial" role="tabpanel">
+    <div class="category-header text-center">
+        <i class="fas fa-wine-glass category-icon"></i>
+        <h2 class="mb-0">Café Especial</h2>
+        <p class="mb-0">Deliciosa experiência com o mais puro café especial.</p>
+    </div>
+    
+    <!-- Happy Hour em destaque -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card bg-success text-white border-0 shadow-sm">
+                <div class="card-body text-center py-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <i class="fas fa-clock fa-3x"></i>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="card-title mb-1">Promoção Estacionamento</h4>
+                            <p class="mb-0">Segunda a Sexta das 17h às 19h</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="text-warning mb-0">30% OFF</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    
+    <div class="row g-4">
+        <!-- Cappuccinos -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-header bg-primary text-white text-center">
+                    <h5 class="mb-0"><i class="fas fa-tint me-2"></i>Cappuccinos</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Mocha</strong>
+                            <br><small class="text-muted">300ml De Café especial, leite cremoso e calda de chocolate.</small>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">R$ 6,90</span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Cappuccino Nordestino</strong>
+                            <br><small class="text-muted">350ml de Café especial, leite cremoso, paçoca e doce de leite.</small>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">R$ 7,90</span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Cappuccino Italiano</strong>
+                            <br><small class="text-muted">Café e leite cremoso</small>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">R$ 8,90</span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Cappuccino Gigante</strong>
+                            <br><small class="text-muted">500ml de Café especial expresso, leite cremoso e expuma cremosa.</small>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">R$ 18,90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cafés Tradicionais -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-header bg-warning text-dark text-center">
+                    <h5 class="mb-0"><i class="fas fa-coffee me-2"></i>Cafés Tradicionais</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Café Expresso</strong>
+                            <br><small class="text-muted">Tradicional</small>
+                        </div>
+                        <span class="badge bg-warning text-dark rounded-pill">R$ 6,90</span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Café Expresso grande</strong>
+                            <br><small class="text-muted">Tradicional</small>
+                        </div>
+                        <span class="badge bg-warning text-dark rounded-pill">R$ 9,90</span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Café na Prensa francesa</strong>
+                            <br><small class="text-muted">Café especial preparado na Prensa Francesa</small>
+                        </div>
+                        <span class="badge bg-warning text-dark rounded-pill">R$ 8,90</span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Café com Leite</strong>
+                            <br><small class="text-muted">Cremoso</small>
+                        </div>
+                        <span class="badge bg-warning text-dark rounded-pill">R$ 7,90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Latte artes e Sobremesa -->
+        <div class="col-lg-4 col-md-12">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-header bg-danger text-white text-center">
+                    <h5 class="mb-0"><i class="fas fa-wine-bottle me-2"></i>Latte artes e Sobremesa</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Latte</strong>
+                            <br><small class="text-muted">350ml  de Café com leite e uma linda arte.</small>
+                        </div>
+                        <span class="badge bg-danger rounded-pill">R$ 18,90</span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Latte Macchiato</strong>
+                            <br><small class="text-muted">350ml de Leite cremoso, café expresso e canela.</small>
+                        </div>
+                        <span class="badge bg-danger rounded-pill">R$ 16,90</span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Honey Mocha</strong>
+                            <br><small class="text-muted">350ml de Mel, leite bem cremoso e um delicioso café expresso.</small>
+                        </div>
+                        <span class="badge bg-danger rounded-pill">R$ 22,90</span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Affogato</strong>
+                            <br><small class="text-muted">2 Bolas de sorvete de creme e um delicioso café expresso.</small>
+                        </div>
+                        <span class="badge bg-danger rounded-pill">R$ 8,90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
